@@ -3,13 +3,13 @@ import React, { useReducer } from "react";
 export function Checkbox(){
     const [checked, toggle] = useReducer(
       (checked) => !checked,
-      false  
+      false
     );
 
     return(
       <>
         <label htmlFor="checkbox">{checked ? "checked" : "not checked"}</label>
-        <input 
+        <input
             id="checkbox"
             type="checkbox"
             value={checked}
